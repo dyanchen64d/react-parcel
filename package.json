@@ -23,6 +23,6 @@
     "babel-preset-react": "^6.24.1",
     "parcel-bundler": "^1.12.2",
     "sass": "^1.17.3",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.3.4000"
   }
 }
