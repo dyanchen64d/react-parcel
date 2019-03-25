@@ -180,4 +180,29 @@ class Request {
 export default Request;
 ```
 
+### nginx
+
+```
+# Aware
+server{
+    listen 7077;
+    server_name localhost;
+
+    location ^~ /api {
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://10.10.200.196:8406/;
+        #proxy_pass http://new-test-api.gymbomate.com/;
+    }
+
+    location / {
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-cdFor $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:7007;
+    }
+}
+```
+
 ### mobx
