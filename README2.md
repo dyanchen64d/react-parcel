@@ -206,3 +206,19 @@ server{
 ```
 
 ### mobx
+
+```js
+const rootStore = new RootStore()
+const stores = {
+  rootStore:new RootStore(),
+  todolistStore: new TodoList(rootStore)
+}
+
+ReactDOM.render(
+  <LocaleProvider locale={zh_CN}>
+    <Router history={history}>
+      <Provider {...stores}><Main /></Provider>
+    </Router>
+  </LocaleProvider>,document.getElementById('root')
+);
+```
