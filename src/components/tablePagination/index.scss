@@ -1,0 +1,35 @@
+.table-pagination {
+  .ant-table-thead {
+    font-size: 14px;
+    border-bottom: 2px solid #E3EBF3;
+    th {
+      background-color: white;
+      color: #6B6F82;
+      padding: 0px 20px 10px 20px;
+    }
+  }
+  .ant-table-tbody {
+    font-size: 13px;
+    td {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+    font-size: 12px;
+
+    .pagination {
+      font-size: 12px;
+      .ant-pagination-options-size-changer {
+        font-size: 12px;
+      }
+    }
+  }
+}

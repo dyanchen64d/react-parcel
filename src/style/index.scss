@@ -1,3 +1,18 @@
-body {
+@import './func.scss';
 
+@media screen and (max-width:$minWidth) {
+  html {
+    font-size: $fontSize1200;
+  }
+}
+
+@media screen and (min-width:$minWidth+1) {
+  html {
+    font-size: calcFontSize();
+  }
+}
+
+body,p {
+  margin: 0px;
+  padding: 0px;
 }

@@ -1,0 +1,18 @@
+/**
+ * desc: 微服务样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/3/26
+ * Time: 上午9:25
+ */
+@import "../../../style/func";
+
+.service-list{
+  &-wrap{
+    padding: 30px 0;
+    &-table{
+      &-button{
+        @include xs-button;
+      }
+    }
+  }
+}

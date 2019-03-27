@@ -1,0 +1,26 @@
+.welcome {
+  padding: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .welpng {
+    width: 600px;
+    height: 300px;
+  }
+  .intro {
+    position: absolute;
+    left: 100px;
+    p {
+      color: #ef7421;
+      margin-bottom: 14px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      font-size: 12px;
+      color: #6B6F82;
+    }
+  }
+}

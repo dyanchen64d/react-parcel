@@ -1,0 +1,39 @@
+/**
+ * desc: 角色管理样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/3/22
+ * Time: 下午2:01
+ */
+@import "../../../style/theme";
+
+.role-manage{
+  &-wrap{
+    margin-bottom: 20px;
+  }
+  .ant-card.role-manage-card{
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.10);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  &-card{
+    &-title{
+      font-size: 18px;
+      text-align: center;
+    }
+    &-footer{
+      display:flex;
+      justify-content: space-between;
+      .high-light{
+        color: $themeColor;
+      }
+    }
+    &-plus{
+      text-align: center;
+      font-size: 65px;
+    }
+  }
+
+
+}

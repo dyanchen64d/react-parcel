@@ -1,0 +1,18 @@
+/**
+ * desc: 在线用户管理
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/3/22
+ * Time: 下午4:05
+ */
+@import "../../../style/func";
+
+.online-user-manage{
+  &-wrap{
+    padding: 30px;
+  }
+  &-table{
+    &-button{
+      @include xs-button;
+    }
+  }
+}

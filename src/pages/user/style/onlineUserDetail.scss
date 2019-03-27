@@ -1,0 +1,17 @@
+/**
+ * desc: 用户详情列表
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/3/25
+ * Time: 下午3:19
+ */
+.online-user-detail{
+  &-wrap{
+    padding: 30px 45px;
+  }
+  &-search{
+    margin-bottom: 20px;
+    &-button{
+      margin-left: 25px;
+    }
+  }
+}

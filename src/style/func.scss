@@ -1,0 +1,21 @@
+$fontSize1200:14px;
+$minWidth:1200px;
+
+@function px2rem($px){
+  @if(unit($px) == "px") {
+    @return ($px / $fontSize1200 ) * 1rem;
+  }@else{
+    @return $px;
+  }
+}
+
+@function calcFontSize() {
+  @return (100 * 14 / 1200) * 1vw;
+}
+
+@mixin xs-button{
+  border:1px solid #ef7421;
+  color: #ef7421;
+  border-radius: 4px;
+  cursor: pointer;
+}

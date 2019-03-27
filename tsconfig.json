@@ -1,11 +1,27 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "moduleResolution": "node",
     "jsx": "react",
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
     "rootDirs": ["./src"],
     "baseUrl": "./src",
     "paths": {
       "@src/*": ["*"]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
