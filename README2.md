@@ -222,3 +222,7 @@ ReactDOM.render(
   </LocaleProvider>,document.getElementById('root')
 );
 ```
+
+### Gitlab+Jenkins实现自动部署
+
+https://blog.51cto.com/bigboss/2129477
